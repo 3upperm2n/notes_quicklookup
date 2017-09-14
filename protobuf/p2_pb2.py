@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_pb=_b('\n\x08p2.proto\x12\x08tutorial\"\xdb\x01\n\x06Person\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\n\n\x02id\x18\x02 \x02(\x05\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12,\n\x06phones\x18\x04 \x03(\x0b\x32\x1c.tutorial.Person.PhoneNumber\x1aM\n\x0bPhoneNumber\x12\x0e\n\x06number\x18\x01 \x02(\t\x12.\n\x04type\x18\x02 \x01(\x0e\x32\x1a.tutorial.Person.PhoneType:\x04HOME\"+\n\tPhoneType\x12\n\n\x06MOBILE\x10\x00\x12\x08\n\x04HOME\x10\x01\x12\x08\n\x04WORK\x10\x02\"/\n\x0b\x41\x64\x64ressBook\x12 \n\x06people\x18\x01 \x03(\x0b\x32\x10.tutorial.Person')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -179,6 +178,7 @@ _PERSON_PHONETYPE.containing_type = _PERSON
 _ADDRESSBOOK.fields_by_name['people'].message_type = _PERSON
 DESCRIPTOR.message_types_by_name['Person'] = _PERSON
 DESCRIPTOR.message_types_by_name['AddressBook'] = _ADDRESSBOOK
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Person = _reflection.GeneratedProtocolMessageType('Person', (_message.Message,), dict(
 
